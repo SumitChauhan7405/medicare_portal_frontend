@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Clock, MapPin } from "lucide-react";
+import logo from '../assets/MediCare_Plus_Logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +43,7 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-2">
             <MapPin size={14} />
-            <span>123 Healthcare Avenue, Medical District</span>
+            <span>Mavdi Circle, 150ft Ring Road, Rajkot - 360004</span>
           </div>
         </div>
       </div>
@@ -59,12 +60,10 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary-foreground">M</span>
-              </div>
+              <img src={logo} height={55} width={55} />
               <div>
-                <h1 className="text-xl font-bold text-foreground">MediCare</h1>
-                <p className="text-xs text-muted-foreground">Hospital</p>
+                <h1 className="text-xl font-bold text-primary">MediCare Hospital</h1>
+                <p className="text-xs text-muted-foreground">Your Health, Our Promise </p>
               </div>
             </Link>
 
@@ -83,7 +82,7 @@ const Header = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-4">
-              <Link to="/contact" className="btn-primary">
+              <Link to="/doctors" className="btn-primary">
                 Book Appointment
               </Link>
             </div>
@@ -117,7 +116,7 @@ const Header = () => {
                 </Link>
               ))}
               <Link
-                to="/contact"
+                to="/doctors"
                 onClick={() => setIsMenuOpen(false)}
                 className="btn-primary text-center mt-2"
               >

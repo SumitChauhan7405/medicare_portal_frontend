@@ -10,13 +10,15 @@ import {
   Linkedin,
   ArrowUp
 } from "lucide-react";
+import logo from '../assets/MediCare_Plus_Logo.png';
+
 
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  return (
+  return (  
     <footer className="bg-foreground text-background">
       {/* Main Footer */}
       <div className="container-custom py-16">
@@ -24,12 +26,10 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary-foreground">M</span>
-              </div>
+              <img src={logo} height={70} width={70} />
               <div>
-                <h3 className="text-xl font-bold">MediCare</h3>
-                <p className="text-sm opacity-70">Hospital</p>
+                <h3 className="text-xl font-bold">MediCare Hospital</h3>
+                <p className="text-sm opacity-70">Your Health, Our Promise</p>
               </div>
             </div>
             <p className="text-background/70 mb-6 leading-relaxed">
@@ -106,8 +106,8 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-primary mt-1 shrink-0" />
                 <span className="text-background/70">
-                  123 Healthcare Avenue,<br />
-                  Medical District, City - 380001
+                  Medicare Multispeciality Hospital Mavdi Circle,
+                 150ft Ring Road, Rajkot - 360004.
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -135,7 +135,7 @@ const Footer = () => {
         <div className="container-custom py-8">
           <div className="rounded-2xl overflow-hidden h-64 bg-background/10">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9013960821986!2d72.5043279!3d23.0225586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b4923f6d3e9%3A0x8d4b11c0b0d0f6a0!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.3910085985513!2d70.78369207514126!3d22.263062929713396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca5dbb9dce8b%3A0xb806abb2548939fb!2sMavdi%20Chowkdi%2C%20Rajkot%2C%20Gujarat%20360004!5e1!3m2!1sen!2sin!4v1771137239198!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -152,7 +152,7 @@ const Footer = () => {
       <div className="border-t border-background/10">
         <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/60 text-sm text-center md:text-left">
-            © 2024 MediCare Hospital. All rights reserved.
+            © 2026 MediCare Hospital Managment System. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-background/60">
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>

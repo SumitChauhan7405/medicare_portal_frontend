@@ -111,7 +111,7 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up animation-delay-600">
-              <Link to="/contact" className="btn-primary text-center">
+              <Link to="/doctors" className="btn-primary text-center">
                 Book Appointment
               </Link>
               <Link to="/services" className="btn-white text-center">
