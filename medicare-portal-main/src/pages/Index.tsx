@@ -245,7 +245,7 @@ const Index = () => {
             Book an appointment with our specialists today. We're here to provide 
             you with the best healthcare services.
           </p>
-          <Link to="/contact" className="btn-white">
+          <Link to="/doctors" className="btn-white">
             Book Appointment Now
             <ArrowRight size={18} className="ml-2" />
           </Link>
